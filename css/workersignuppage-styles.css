@@ -1,0 +1,71 @@
+
+
+main h1,#first{
+    text-align: center;
+    color:black;
+}
+main form{
+    width:60vw;
+    max-width: 500px;
+    min-width: 300px;
+    box-shadow: 0 0 6px 0 rgb(170,174,181);
+    margin: 0 auto;
+    padding:2rem 2rem;
+    border-radius: 0.5rem;
+
+}
+main label{
+    display: block;
+}
+
+main input{
+    display:block;
+    width:100%;
+    height:2rem;
+    border: none; 
+
+}
+
+main fieldset{
+    border: none;
+    border-bottom: 3px solid #0693e3;
+    padding: 1rem 0 2rem;
+}
+main input:focus{
+    outline: none;
+    border-bottom: 4px solid #e35606;
+}
+
+main #first{
+    margin-bottom:2rem;
+}
+main .exception{
+    display:unset;
+    width:unset;
+    height:unset;
+}
+main input[type="submit"]{
+    margin-top:2rem;
+    font-size:larger;
+    border-radius: 0.5rem;
+}
+main input[type="submit"]:hover{
+    background-color:#e35606;
+    color:white;
+}
+main a{
+    color:#e35606;
+}
+main #errorMessage1,#errorMessage2{
+    color: #e35606;
+    
+    text-align: center;
+    background-color: #fc985e;
+}
+main select{
+    width:100%;
+    border:none;
+}
+main select:hover{
+    border: 2px solid #e35606;
+}

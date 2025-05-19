@@ -1,0 +1,221 @@
+#quick-view div{
+    flex: 1 1 0; 
+    min-width: 150px; 
+    max-width: 300px; 
+    border-radius: 8px;
+    padding:2rem;
+}
+#quick-view{
+    display: flex;
+    gap: 1rem; 
+    padding-top: 2rem;
+}
+section{
+    margin-left: 2rem; 
+    margin-right: 2rem;
+    
+
+}
+#quick-view svg{
+    width:50.29px;
+    height:56.8px;
+}
+#quick-view span{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#quick-view svg{
+    display:block;
+    margin: 0 auto 0;
+
+}
+#q3 p{
+    text-align: center;
+}
+#q1{
+    background-color:rgba(255, 205, 158, 0.908);
+    color:white;
+}
+#q2{
+    background-color:rgba(158, 189, 255, 0.908);
+    color:white;
+
+}
+#q3{
+    background-color:rgba(255, 205, 158, 0.908);
+    color:white;
+    cursor: pointer;
+
+}
+#q3:hover{
+    background-color: rgba(249, 182, 119, 0.908) ;
+}
+#unapproved-table {
+    width: 100%;
+    table-layout: fixed;  /* Ensures columns respect the defined widths */
+    border-collapse: collapse;
+}
+
+#unapproved-table caption {
+    text-align: left;
+    font-size: 2.5rem;
+    color: #e35606;
+    font-weight: bold;
+}
+
+#unapproved-table th {
+    background-color: rgba(255, 205, 158, 0.908);
+    color: white;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+}
+
+#unapproved-table td {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    vertical-align: top;  
+    text-align: center; 
+}
+
+
+#unapproved-table th:nth-child(1), #unapproved-table td:nth-child(1) {
+    width: 50%; 
+}
+
+
+#unapproved-table th:nth-child(n+2), #unapproved-table td:nth-child(n+2) {
+    width: auto; 
+}
+
+
+
+input[name="delete"]{
+    padding:0.5rem;
+    background-color: rgba(255, 205, 158, 0.908);
+    border-radius: 10px;
+    border:none;
+}
+input[name="delete"]:hover{
+    background-color: rgba(255, 65, 65, 0.701);
+}
+
+.pop-up{
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1000;
+    max-width: 500px;
+    width:30vw;
+    min-width: 400px;
+
+}
+
+.pop-up textarea{
+    display:block;
+    width:100%;
+}
+.pop-up label{
+    display:block;
+    width:100%;
+    color:rgba(158, 189, 255, 0.908);
+}
+.pop-up select{
+    display:block;
+    width:100%;
+}
+.pop-up input[type="submit"]{
+    display:block;
+    width:100%;
+    margin-top:1rem;
+    border:none;
+    background-color: rgba(255, 205, 158, 0.908);
+    padding:0.4rem;
+}
+.pop-up input[type="submit"]:hover{
+    background-color: rgba(255, 188, 126, 0.908);
+}
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.pop-up2{
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1000;
+    max-width: 500px;
+    width:30vw;
+    min-width: 400px;
+
+}
+
+.pop-up2 textarea{
+    display:block;
+    width:100%;
+}
+.pop-up2 label{
+    display:block;
+    width:100%;
+    color:rgba(158, 189, 255, 0.908);
+}
+.pop-up2 select{
+    display:block;
+    width:100%;
+}
+.pop-up2 input[type="submit"]{
+    display:block;
+    width:100%;
+    margin-top:1rem;
+    border:none;
+    background-color: rgba(255, 205, 158, 0.908);
+    padding:0.4rem;
+}
+.pop-up2 input[type="submit"]:hover{
+    background-color: rgba(255, 188, 126, 0.908);
+}
+#update-button{
+    padding:0.5rem;
+    background-color: rgba(158, 189, 255, 0.908);
+    border-radius: 10px;
+    border:none;
+}
+#update-button:hover{
+    background-color: rgba(169, 248, 104, 0.908);
+
+}
+
+.pop-up3{
+    display: none;
+    position:fixed;
+    top: 30%;
+    left: 35%;
+    background-color: rgba(255, 188, 126, 0.908);;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1000;
+    max-width: 500px;
+    width:30vw;
+    min-width: 400px;
+}
+#delete-button{
+    padding:0.5rem;
+    background-color: rgba(249, 182, 119, 0.908);
+    border-radius: 10px;
+    border:none;
+    }
+#delete-button:hover{
+    background-color: rgba(255, 65, 65, 0.701)
+}

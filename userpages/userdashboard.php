@@ -46,7 +46,7 @@ $result2=mysqli_query($conn,$query2);
         <p>New complaint</p>
         </div>
     </section>
-    <section>
+    <section id="table-container">
         <table id="unapproved-table">
             <caption>Unapproved Complaints</caption>
             <thead>

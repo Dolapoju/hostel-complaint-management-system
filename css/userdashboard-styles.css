@@ -9,6 +9,8 @@
     display: flex;
     gap: 1rem; 
     padding-top: 2rem;
+    flex-wrap: wrap;
+
 }
 section{
     margin-left: 2rem; 
@@ -52,6 +54,7 @@ section{
 }
 #unapproved-table {
     width: 100%;
+    min-width: 790px;
     table-layout: fixed;  /* Ensures columns respect the defined widths */
     border-collapse: collapse;
 }
@@ -218,4 +221,13 @@ input[name="delete"]:hover{
     }
 #delete-button:hover{
     background-color: rgba(255, 65, 65, 0.701)
+}
+#table-container{
+    overflow-x: auto;
+}
+@media (max-width: 380px) {
+    #quick-view span{
+        font-size: 2rem;
+    }
+    
 }

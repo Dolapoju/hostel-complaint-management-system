@@ -94,5 +94,28 @@ div input{
 #roles{
     margin-top: 1rem;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap:1rem;
+}
+#roles input{
+    display:none;
+}
+#roles label{
+    border:1.5px solid #0693e3;
+    padding: 0.2rem 0.7rem;
+    border-radius: 0.2rem;
+    color:grey;
+}
+#roles label:has(input:checked ){
+    border:1px solid #e35606;
+    color: black;
+
+}
+@media (max-width: 665px) {
+    #roles label{font-size: 0.5rem;}
+
+    #roles{
+        gap:0.5rem;
+    }
+    
 }

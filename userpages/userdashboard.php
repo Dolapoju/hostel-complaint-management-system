@@ -66,7 +66,7 @@ $result2=mysqli_query($conn,$query2);
                 <tr>
                 <td><?php echo $row["complaint"] ?></td>
                 <td><?php echo $row["status"] ?></td>
-                <td><button id="update-button" onclick="showForm2('<?php echo $comp ?>','<?php echo $idd ?>')">Update</button></td>
+                <td><button id="update-button" onclick="showForm2(`<?php echo $comp ?>`,'<?php echo $idd ?>')">Update</button></td>
                 <td>
                 <button id="delete-button" onclick="showForm3('<?php echo $idd ?>')">Delete</button>
                 
@@ -97,7 +97,6 @@ $result2=mysqli_query($conn,$query2);
         <input type="hidden" name="complaintId" id="complaintIdfield">
         <label for="complaint-field">Complaint:</label>
         <textarea name="complaint" maxlength="1200" id="complaint-field" placeholder="Write something..."></textarea>
-        <!-- <label for="1">Type:</label> -->
         <div>
                 <label class="options"><input value="Electrician" type="radio" name="type" checked >Electrician</option></label>
                 <label class="options"><input value="Plumber" type="radio" name="type">Plumber</option></label>

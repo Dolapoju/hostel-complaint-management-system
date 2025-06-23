@@ -84,7 +84,7 @@ $result2=mysqli_query($conn,$query2);
     <div class="overlay" onclick="hideForm()"></div>
     <form action="" method="POST" class="pop-up">
         <label for="20">Complaint:</label>
-        <textarea name="complaint" maxlength="1200" id="20" placeholder="Write something..."></textarea>
+        <textarea name="complaint" maxlength="1200" id="20" placeholder="Write something..." required></textarea>
             <div>
                 <label class="options"><input value="Electrician" type="radio" name="type" checked >Electrician</option></label>
                 <label class="options"><input value="Plumber" type="radio" name="type">Plumber</option></label>

@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="../css/usernavbar-styles.css">
     <link rel="stylesheet" href="../css/userhistory-styles.css">
 
-
 </head>
 <body>
     <header>

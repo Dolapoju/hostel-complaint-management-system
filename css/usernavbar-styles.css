@@ -99,7 +99,7 @@ header #Layer_1{
 #div:hover #dropdown-content {
     display: block;
 }
-@media (max-width: 673px) {
+@media (max-width: 750px) {
  header ul{
     display: none;
  }
@@ -108,7 +108,7 @@ header #Layer_1{
  }
 
 }
-@media (min-width: 673px) {
+@media (min-width: 750px) {
     #hamburger{
         display:none;
     }

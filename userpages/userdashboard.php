@@ -46,7 +46,7 @@ $result2=mysqli_query($conn,$query2);
         <p>New complaint</p>
         </div>
     </section>
-    <section id="table-container">
+    <section class="table-container">
         <table id="unapproved-table">
             <caption>Unapproved Complaints</caption>
             <thead>
@@ -85,27 +85,25 @@ $result2=mysqli_query($conn,$query2);
     <form action="" method="POST" class="pop-up">
         <label for="20">Complaint:</label>
         <textarea name="complaint" maxlength="1200" id="20" placeholder="Write something..."></textarea>
-        <label for="1">Type:</label>
-        <select name="type" id="10">
-                <option value="Electrician" selected>Electrician</option>
-                <option value="Plumber">Plumber</option>
-                <option value="Aluminum" >Aluminum</option>
-                <option value="Carpenter" >Carpenter</option>
-        </select>
+            <div>
+                <label class="options"><input value="Electrician" type="radio" name="type" checked >Electrician</option></label>
+                <label class="options"><input value="Plumber" type="radio" name="type">Plumber</option></label>
+                <label class="options"><input value="Aluminum" type="radio" name="type">Aluminum</option></label>
+                <label class="options"><input value="Carpenter" type="radio" name="type">Carpenter</option></label>
+            </div>
         <input type="submit" name="submit" value="Add Complaint">
-
     </form>
     <form action="" method="POST" class="pop-up2">
         <input type="hidden" name="complaintId" id="complaintIdfield">
         <label for="complaint-field">Complaint:</label>
         <textarea name="complaint" maxlength="1200" id="complaint-field" placeholder="Write something..."></textarea>
-        <label for="1">Type:</label>
-        <select name="type" id="1">
-                <option value="Electrician" selected>Electrician</option>
-                <option value="Plumber">Plumber</option>
-                <option value="Aluminum" >Aluminum</option>
-                <option value="Carpenter" >Carpenter</option>
-        </select>
+        <!-- <label for="1">Type:</label> -->
+        <div>
+                <label class="options"><input value="Electrician" type="radio" name="type" checked >Electrician</option></label>
+                <label class="options"><input value="Plumber" type="radio" name="type">Plumber</option></label>
+                <label class="options"><input value="Aluminum" type="radio" name="type">Aluminum</option></label>
+                <label class="options"><input value="Carpenter" type="radio" name="type">Carpenter</option></label>
+        </div>
         <input type="submit" name="update" value="Update Complaint">
 
     </form>

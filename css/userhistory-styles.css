@@ -2,6 +2,8 @@
     width: 100%;
     table-layout: fixed;  
     border-collapse: collapse;
+    min-width: 790px;
+
 }
 
 #history-table caption {
@@ -34,4 +36,9 @@
 
 #history-table th:nth-child(n+2), #history-table td:nth-child(n+2) {
     width: auto; 
+}
+.table-container{
+    overflow-x: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }

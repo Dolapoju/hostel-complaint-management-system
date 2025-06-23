@@ -9,6 +9,8 @@
     display: flex;
     gap: 1rem; 
     padding-top: 2rem;
+    flex-wrap: wrap;
+
 }
 section{
     margin-left: 2rem; 
@@ -50,8 +52,13 @@ section{
 #q3:hover{
     background-color: rgba(249, 182, 119, 0.908) ;
 }
+#q3:active {
+    transform: scale(0.95);
+    transition: transform 0.25s ease;
+}
 #unapproved-table {
     width: 100%;
+    min-width: 790px;
     table-layout: fixed;  /* Ensures columns respect the defined widths */
     border-collapse: collapse;
 }
@@ -103,30 +110,65 @@ input[name="delete"]:hover{
     display: none;
     position: fixed;
     top: 30%;
-    left: 35%;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: white;
     border-radius: 10px;
     padding: 20px;
     z-index: 1000;
     max-width: 500px;
-    width:30vw;
-    min-width: 400px;
+    width:50vw;
+    min-width: 300px;
 
 }
 
 .pop-up textarea{
     display:block;
     width:100%;
+    padding: 0.2rem 0.5rem;
+    border:none;
+    margin-bottom: 1rem;
+
 }
-.pop-up label{
+.pop-up input[name="type"]{
+    display:none;
+}
+.options{
+    padding:0.2rem 0.6rem;
+    border:1px solid gray;
+    color:grey;
+    border-radius: 5px;
+
+}
+.options:hover{
+    border:1px solid black;
+    color:black;
+}
+.options:has(input:checked){
+    border:1px solid black;
+    color:black;
+    background-color: whitesmoke;
+}
+.pop-up textarea:focus{
+    outline:none;
+}
+.pop-up div{
+    display:flex;
+    gap:0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* .pop-up label{
     display:block;
     width:100%;
     color:rgba(158, 189, 255, 0.908);
-}
+} */
 .pop-up select{
     display:block;
     width:100%;
 }
+
 .pop-up input[type="submit"]{
     display:block;
     width:100%;
@@ -151,26 +193,38 @@ input[name="delete"]:hover{
     display: none;
     position: fixed;
     top: 30%;
-    left: 35%;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: white;
     border-radius: 10px;
     padding: 20px;
     z-index: 1000;
     max-width: 500px;
-    width:30vw;
-    min-width: 400px;
+    width:50vw;
+    min-width: 300px;
 
 }
-
+.pop-up2 textarea:focus{
+    outline:none;
+}
+.pop-up2 div{
+    display:flex;
+    gap:0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .pop-up2 textarea{
-    display:block;
+       display:block;
     width:100%;
+    padding: 0.2rem 0.5rem;
+    border:none;
+    margin-bottom: 1rem;
 }
-.pop-up2 label{
+/* .pop-up2 label{
     display:block;
     width:100%;
     color:rgba(158, 189, 255, 0.908);
-}
+} */
 .pop-up2 select{
     display:block;
     width:100%;
@@ -185,6 +239,9 @@ input[name="delete"]:hover{
 }
 .pop-up2 input[type="submit"]:hover{
     background-color: rgba(255, 188, 126, 0.908);
+}
+.pop-up2 input[name="type"]{
+    display:none;
 }
 #update-button{
     padding:0.5rem;
@@ -201,14 +258,19 @@ input[name="delete"]:hover{
     display: none;
     position:fixed;
     top: 30%;
-    left: 35%;
-    background-color: rgba(255, 188, 126, 0.908);;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(247, 98, 98, 0.908);
     border-radius: 10px;
     padding: 20px;
     z-index: 1000;
     max-width: 500px;
-    width:30vw;
-    min-width: 400px;
+    width:50vw;
+    min-width: 300px;
+    color:white;
+}
+.pop-up3 p{
+    margin-bottom:1rem;
 }
 #delete-button{
     padding:0.5rem;
@@ -218,4 +280,24 @@ input[name="delete"]:hover{
     }
 #delete-button:hover{
     background-color: rgba(255, 65, 65, 0.701)
+}
+.table-container{
+    overflow-x: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+@media (max-width: 380px) {
+    #quick-view span{
+        font-size: 2rem;
+    }
+    
+}
+@media (max-width: 500px) {
+    #quick-view span{
+        font-size: 2rem;
+    }
+    #quick-view div{
+        padding:1rem;
+        min-width: unset;
+    }
 }

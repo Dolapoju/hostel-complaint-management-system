@@ -39,7 +39,7 @@ $result2=mysqli_query($conn,$query2);
         <p>Complaints Completed</p>
         </div>
     </section>
-    <section>
+    <section class="table-container">
         <table id="pending-table">
             <caption>Pending Complaints</caption>
             <thead>

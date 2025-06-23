@@ -35,7 +35,7 @@ $result2=mysqli_query($conn,$query2);
         <p>Approved Complaints</p>
         </div>
 </section>
-<section>
+<section class="table-container">
 <table id="unapproved-table">
             <caption>Unapproved Complaints</caption>
             <thead>
@@ -76,7 +76,7 @@ $result2=mysqli_query($conn,$query2);
     <div class="overlay" onclick="hideForm()"></div>
     <form method='POST' action='' id="pop-up1">
     <input type='hidden' name='id' id="complaintIdfield">
-    <p>Are you sure you want to Approve this complaint</p>
+    <p>Are you sure you want to approve this complaint</p>
     <input type='submit' name='approve' value='Yes'>
     </form>
 

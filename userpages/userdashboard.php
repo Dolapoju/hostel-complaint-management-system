@@ -59,7 +59,7 @@ $result2=mysqli_query($conn,$query2);
             <tbody>
 
             <?php
-                while ($row = mysqli_fetch_assoc($result)) {
+                while ($row = mysqli_fetch_assoc($result)){
                 $comp=$row['complaint'];
                 $idd=$row['complaintId'];
            ?>

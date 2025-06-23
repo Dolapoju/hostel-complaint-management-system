@@ -12,7 +12,6 @@ function showForm() {
   function showForm2(comp,id) {
     document.getElementById("complaint-field").value=comp;
     document.getElementById("complaintIdfield").value=id;
-
     document.querySelector(".pop-up2").style.display = "block";
     document.querySelector(".overlay").style.display = "block";
   }

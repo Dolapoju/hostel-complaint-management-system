@@ -11,6 +11,12 @@
     font-weight: bold;
     font-style: normal;
   }
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
   
 *{
     margin:0;
@@ -49,18 +55,124 @@ li a{
 li a:active{
     border: 1px dotted #e35606;
     text-decoration:underline;
-    text-underline-offset: 4px;
+    text-underline-offset: 8px;
 }
 
 li a:hover{
     text-decoration: underline;
     text-underline-offset: 4px;
 }
-section{
+/* section{
     margin:13vh 10vw;
 }
 section{
     font-size:5rem;
     font-weight: bold;
     color:#e35606;
+} */
+#intro{
+    margin:6rem auto 1rem;
+    max-width:56rem;
+    padding:1rem;
+}
+.intro-text{
+    font-size: 60px;
+    font-weight:normal;
+    text-align: center;
+    color:#0693e3;
+    /* margin-top:-2rem; */
+    line-height:1;
+    margin-bottom: 1rem;
+   
+
+}
+.underline{
+    text-decoration: underline;
+    text-decoration-color:#bddff3;
+}
+#intro-fine-print{
+    max-width:30rem;
+    text-align:center;
+    margin:0 auto;
+    font-weight: 300;
+
+}
+#intro2 a {
+    text-decoration: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    border: 1px solid #bddff3;
+    color:#e35606;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+#intro2 a:hover {
+    background-color: #e35606;
+    transform: scale(1.06);
+    transition: 0.3s;
+    color: whitesmoke;
+}
+#intro2{
+    text-align: center;
+}
+#quick-view div{
+    flex: 1 1 0; 
+    min-width: 250px; 
+    max-width: 300px; 
+    border-radius: 8px;
+    padding:2rem;
+}
+#quick-view{
+    display: flex;
+    gap: 1rem; 
+    padding-top: 2rem;
+    max-width: 1200px;
+    margin:0 auto 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left:1rem;
+    padding-right:1rem;
+}
+
+#quick-view svg{
+    width:50.29px;
+    height:56.8px;
+}
+#quick-view span{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#quick-view svg{
+    display:block;
+    margin: 0 auto 0;
+
+}
+#q3 p{
+    text-align: center;
+}
+#q1{
+    background-color:rgba(255, 205, 158, 0.908);
+    color:white;
+}
+#q2{
+    background-color:rgba(158, 189, 255, 0.908);
+    color:white;
+
+}
+#q3{
+    background-color:rgba(255, 205, 158, 0.908);
+    color:white;
+    cursor: pointer;
+
+}
+#q3:hover{
+    background-color: rgba(249, 182, 119, 0.908) ;
+}
+@media (max-width: 425px) {
+    #intro{
+        margin:4rem auto 1rem;
+    }
+    
 }

@@ -14,7 +14,7 @@ $result=mysqli_query($conn,$query);
 ?>
 
 
-<section>
+<section class="table-container">
 <table id="history-table">
             <caption>Complaint History</caption>
             <thead>

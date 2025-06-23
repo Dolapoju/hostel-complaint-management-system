@@ -20,7 +20,7 @@ WHERE
     c.approved = 1";
 $result=mysqli_query($conn,$query);
 ?>
-<section >
+<section class="table-container">
 <table id="history-table">
             <caption>Approved History</caption>
             <thead>
